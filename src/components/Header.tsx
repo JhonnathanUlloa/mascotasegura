@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,12 +18,12 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { href: '#inicio', label: 'Inicio' },
-    { href: '#planes', label: 'Planes y Precios' },
-    { href: '#como-funciona', label: 'Cómo Funciona' },
-    { href: '#memorial', label: 'Memorial' },
-    { href: '#sobre-nosotros', label: 'Sobre Nosotros' },
-    { href: '#contacto', label: 'Contacto' },
+    { href: '/', label: 'Inicio' },
+    { href: '/planes', label: 'Planes y Precios' },
+    { href: '/como-funciona', label: 'Cómo Funciona' },
+    { href: '/memorial', label: 'Memorial' },
+    { href: '/sobre-nosotros', label: 'Sobre Nosotros' },
+    { href: '/contacto', label: 'Contacto' },
   ];
 
   return (
@@ -32,9 +33,14 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="#inicio" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center">
-              <span className="text-white font-bold text-lg">🐾</span>
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="w-10 h-10 relative">
+              <Image
+                src="/recursos/logoms.jpeg"
+                alt="Mi Mascota Segura Logo"
+                fill
+                className="object-contain rounded-xl"
+              />
             </div>
             <div>
               <h1 className="text-xl font-bold text-slate-800">Mi Mascota Segura</h1>

@@ -1,23 +1,24 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { label: 'Inicio', href: '#inicio' },
-    { label: 'Planes y Cobertura', href: '#planes' },
-    { label: 'Cómo Funciona', href: '#como-funciona' },
-    { label: 'Memorial', href: '#memorial' },
-    { label: 'Sobre Nosotros', href: '#sobre-nosotros' },
-    { label: 'Contacto', href: '#contacto' }
+    { label: 'Inicio', href: '/' },
+    { label: 'Planes y Cobertura', href: '/planes' },
+    { label: 'Cómo Funciona', href: '/como-funciona' },
+    { label: 'Memorial', href: '/memorial' },
+    { label: 'Sobre Nosotros', href: '/sobre-nosotros' },
+    { label: 'Contacto', href: '/contacto' }
   ];
 
   const services = [
-    { label: 'Asistencia 24/7', href: '#planes' },
-    { label: 'Coordinación Veterinaria', href: '#planes' },
-    { label: 'Gestión de Reclamos', href: '#planes' },
-    { label: 'Memorial Digital', href: '#memorial' },
-    { label: 'Seguros para Mascotas', href: '#planes' }
+    { label: 'Asistencia 24/7', href: '/planes' },
+    { label: 'Coordinación Veterinaria', href: '/planes' },
+    { label: 'Gestión de Reclamos', href: '/planes' },
+    { label: 'Memorial Digital', href: '/memorial' },
+    { label: 'Seguros para Mascotas', href: '/planes' }
   ];
 
   const legalLinks = [
@@ -42,8 +43,13 @@ const Footer = () => {
           {/* Company info */}
           <div className="lg:col-span-1 space-y-6">
             <div className="flex items-center space-x-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">🐾</span>
+              <div className="w-12 h-12 relative">
+                <Image
+                  src="/recursos/logoms.jpeg"
+                  alt="Mi Mascota Segura Logo"
+                  fill
+                  className="object-contain rounded-xl"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">Mi Mascota Segura</h3>

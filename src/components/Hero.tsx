@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 const Hero = () => {
@@ -62,7 +63,7 @@ const Hero = () => {
               </Link>
               
               <Link
-                href="#planes"
+                href="/planes"
                 className="group bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
               >
                 <span className="text-2xl">📄</span>
@@ -87,18 +88,17 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Imagen/Video Principal */}
+          {/* Imagen Principal */}
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-500">
-              {/* Placeholder para imagen - En producción usar Next.js Image */}
-              <div className="aspect-[4/5] bg-gradient-to-br from-emerald-400 to-teal-600 flex items-center justify-center">
-                <div className="text-center text-white p-8">
-                  <div className="text-8xl mb-4">🐕‍🦺</div>
-                  <h3 className="text-2xl font-bold mb-2">Imagen Hero</h3>
-                  <p className="text-emerald-100">
-                    Foto cálida de una mascota feliz con su dueño
-                  </p>
-                </div>
+              <div className="aspect-[4/5] relative">
+                <Image
+                  src="/recursos/ftocalida.png"
+                  alt="Mascota feliz con su familia - Mi Mascota Segura"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
               
               {/* Overlay decorativo */}

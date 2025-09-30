@@ -1,36 +1,163 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mi Mascota Segura - Plataforma Web
 
-## Getting Started
+Una plataforma integral para el cuidado y protección de mascotas con servicios de emergencia 24/7, seguros y memorial digital.
 
-First, run the development server:
+## 🚀 Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15.5.4** - Framework de React con App Router
+- **React 19.1.0** - Biblioteca de interfaz de usuario
+- **TypeScript** - Tipado estático
+- **Tailwind CSS 4** - Framework de CSS utilitario
+- **Turbopack** - Bundler ultra-rápido para desarrollo
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── app/                      # App Router de Next.js
+│   ├── page.tsx             # Página principal (Hero + Welcome)
+│   ├── layout.tsx           # Layout principal
+│   ├── globals.css          # Estilos globales
+│   ├── planes/              
+│   │   └── page.tsx         # Página de planes y precios
+│   ├── como-funciona/       
+│   │   └── page.tsx         # Cómo funciona nuestro servicio
+│   ├── memorial/            
+│   │   └── page.tsx         # Memorial digital para mascotas
+│   ├── testimonios/         
+│   │   └── page.tsx         # Testimonios de clientes
+│   ├── preguntas-frecuentes/
+│   │   └── page.tsx         # FAQ
+│   ├── sobre-nosotros/      
+│   │   └── page.tsx         # Información de la empresa
+│   └── contacto/            
+│       └── page.tsx         # Formulario de contacto
+├── components/              # Componentes reutilizables
+│   ├── Header.tsx           # Navegación principal
+│   ├── Hero.tsx             # Sección hero de inicio
+│   ├── Welcome.tsx          # Sección de bienvenida
+│   ├── Plans.tsx            # Planes y precios
+│   ├── HowItWorks.tsx       # Proceso paso a paso
+│   ├── Memorial.tsx         # Memorial digital
+│   ├── Testimonials.tsx     # Testimonios
+│   ├── FAQ.tsx              # Preguntas frecuentes
+│   ├── AboutUs.tsx          # Sobre nosotros
+│   ├── Contact.tsx          # Formulario de contacto
+│   └── Footer.tsx           # Pie de página
+└── public/
+    └── recursos/            # Recursos multimedia
+        ├── logoms.jpeg      # Logo de la empresa
+        └── ftocalida.png    # Imagen cálida de mascotas
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Características
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ✅ Arquitectura Multi-Página
+- **Rutas semánticas**: URLs claras como `/planes`, `/contacto`, `/memorial`
+- **SEO optimizado**: Metadata específica para cada página
+- **Navegación intuitiva**: Header con enlaces directos a cada sección
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### ✅ Componentes Modulares
+- Cada sección es un componente independiente
+- Fácil mantenimiento y escalabilidad
+- Reutilización de código optimizada
 
-## Learn More
+### ✅ Diseño Responsive
+- Diseño mobile-first con Tailwind CSS
+- Navegación adaptable en dispositivos móviles
+- Imágenes optimizadas con Next.js Image
 
-To learn more about Next.js, take a look at the following resources:
+### ✅ Recursos Integrados
+- Logo corporativo (`logoms.jpeg`)
+- Imagen cálida de mascotas (`ftocalida.png`)
+- Iconografía consistente con emojis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Desarrollo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Instalación
+```bash
+npm install
+```
 
-## Deploy on Vercel
+### Desarrollo Local
+```bash
+npm run dev
+```
+El sitio estará disponible en [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Build de Producción
+```bash
+npm run build
+npm start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🗺️ Rutas Disponibles
+
+| Ruta | Descripción | Componente Principal |
+|------|-------------|---------------------|
+| `/` | Página de inicio | Hero + Welcome |
+| `/planes` | Planes y cobertura | Plans |
+| `/como-funciona` | Proceso del servicio | HowItWorks |
+| `/memorial` | Memorial digital | Memorial |
+| `/testimonios` | Experiencias de clientes | Testimonials |
+| `/preguntas-frecuentes` | Preguntas frecuentes | FAQ |
+| `/sobre-nosotros` | Información corporativa | AboutUs |
+| `/contacto` | Formulario de contacto | Contact |
+
+## 🎯 Funcionalidades Principales
+
+### 🚨 Emergencias 24/7
+- Botón de emergencia visible en toda la plataforma
+- Llamada directa desde cualquier página
+
+### 💬 WhatsApp Integration
+- Contacto inmediato por WhatsApp
+- Disponible en header y footer
+
+### 📱 Memorial Digital
+- Sección especial para honrar mascotas
+- Servicios de despedida personalizados
+
+### 💳 Planes Flexibles
+- Membresías adaptadas a diferentes necesidades
+- Información clara de coberturas
+
+## 🔧 Configuración
+
+### Colores Personalizados
+```css
+:root {
+  --cream: #fefdf9;
+  --mint: #a7f3d0;
+  --mint-dark: #34d399;
+  --soft-gray: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+}
+```
+
+### Scripts Disponibles
+- `npm run dev` - Servidor de desarrollo con Turbopack
+- `npm run build` - Build de producción con Turbopack
+- `npm run start` - Servidor de producción
+- `npm run lint` - Linting con ESLint
+
+## 📞 Contacto
+
+Para emergencias: **300 XXX XXXX** (24/7)
+WhatsApp: **573 XXXXXXXXX**
+Email: **contacto@mimascotasegura.com**
+
+---
+
+## 🏗️ Próximas Mejoras
+
+- [ ] Integración con CMS para contenido dinámico
+- [ ] Sistema de autenticación para clientes
+- [ ] Dashboard de usuario para gestión de pólizas
+- [ ] Integración con pasarelas de pago
+- [ ] Chat en vivo con veterinarios
+- [ ] App móvil nativa
+
+Desarrollado con ❤️ para las mascotas y sus familias.

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Welcome = () => {
   return (
     <section className="py-20 bg-white">
@@ -68,12 +70,18 @@ const Welcome = () => {
                 Únete a cientos de familias que ya confían en nosotros
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors duration-200">
+                <Link
+                  href="/planes"
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors duration-200"
+                >
                   Conocer Planes
-                </button>
-                <button className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200">
+                </Link>
+                <Link
+                  href="/contacto"
+                  className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200"
+                >
                   Hablar con Experto
-                </button>
+                </Link>
               </div>
             </div>
           </div>

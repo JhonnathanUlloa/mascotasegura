@@ -9,6 +9,11 @@
   --text-secondary: #64748b;
 }
 
+/* Utilidad personalizada para el color cream */
+.bg-cream {
+  background-color: var(--cream);
+}
+
 /* Scrollbar personalizado */
 ::-webkit-scrollbar {
   width: 8px;
