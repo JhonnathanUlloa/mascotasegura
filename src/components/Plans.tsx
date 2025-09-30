@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface PlanFeature {
   name: string;
@@ -46,10 +47,10 @@ const Plans = () => {
   ];
 
   const insuranceCompanies = [
-    { name: 'SURA', logo: '🏢', color: 'bg-red-500' },
-    { name: 'Seguros Bolívar', logo: '🏛️', color: 'bg-blue-500' },
-    { name: 'Alfa', logo: '🏪', color: 'bg-green-500' },
-    { name: 'Liberty', logo: '🏬', color: 'bg-purple-500' },
+    { name: 'SURA', logo: '🏢', color: 'bg-blue-600' },
+    { name: 'Seguros Bolívar', logo: '🏛️', color: 'bg-red-600' },
+    { name: 'Alfa', logo: '🏪', color: 'bg-green-600' },
+    { name: 'Liberty', logo: '🏬', color: 'bg-purple-600' },
   ];
 
   return (
@@ -130,12 +131,23 @@ const Plans = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center space-x-2">
-                    <span>🎯</span>
-                    <span>Comenzar Ahora</span>
+                    <Image 
+                      src="/recursos/contact-icon.svg" 
+                      alt="Comenzar" 
+                      width={16} 
+                      height={16}
+                      className="filter invert"
+                    />
+                    <span>Comenzar</span>
                   </button>
                   <button className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center space-x-2">
-                    <span>💬</span>
-                    <span>Hablar con Asesor</span>
+                    <Image 
+                      src="/recursos/whatsapp-icon.svg" 
+                      alt="Chat" 
+                      width={16} 
+                      height={16}
+                    />
+                    <span>Chat</span>
                   </button>
                 </div>
               </div>

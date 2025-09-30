@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-emerald-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
-        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-amber-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse delay-1000"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-500"></div>
       </div>
 
@@ -45,29 +45,47 @@ const Hero = () => {
             {/* Botones CTA */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
-                href="tel:300XXXXXXX"
+                href="tel:+573214349583"
                 className="group bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
               >
-                <span className="text-2xl">🚨</span>
-                <span>Emergencias 24/7</span>
-                <div className="w-2 h-2 bg-red-300 rounded-full animate-ping"></div>
+                <Image 
+                  src="/recursos/phone-icon.svg" 
+                  alt="Llamar" 
+                  width={20} 
+                  height={20}
+                  className="filter invert"
+                />
+                <span>SOS</span>
+                <div className="w-2 h-2 bg-red-200 rounded-full animate-ping"></div>
               </Link>
               
               <Link
-                href="https://wa.me/573XXXXXXXXX"
+                href="https://wa.me/573214349583"
                 target="_blank"
                 className="group bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
               >
-                <span className="text-2xl">💬</span>
-                <span>WhatsApp inmediato</span>
+                <Image 
+                  src="/recursos/whatsapp-icon.svg" 
+                  alt="WhatsApp" 
+                  width={20} 
+                  height={20}
+                  className="filter invert"
+                />
+                <span>Chat</span>
               </Link>
               
               <Link
                 href="/planes"
                 className="group bg-slate-800 hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3"
               >
-                <span className="text-2xl">📄</span>
-                <span>Ver Planes y Precios</span>
+                <Image 
+                  src="/recursos/contact-icon.svg" 
+                  alt="Planes" 
+                  width={20} 
+                  height={20}
+                  className="filter invert"
+                />
+                <span>Planes</span>
               </Link>
             </div>
 
@@ -106,10 +124,10 @@ const Hero = () => {
             </div>
 
             {/* Elementos flotantes decorativos */}
-            <div className="absolute -top-4 -left-4 w-8 h-8 bg-yellow-400 rounded-full animate-bounce delay-0"></div>
-            <div className="absolute -top-2 -right-6 w-6 h-6 bg-pink-400 rounded-full animate-bounce delay-300"></div>
-            <div className="absolute -bottom-6 -left-2 w-10 h-10 bg-blue-400 rounded-full animate-bounce delay-700"></div>
-            <div className="absolute -bottom-4 -right-4 w-4 h-4 bg-purple-400 rounded-full animate-bounce delay-1000"></div>
+            <div className="absolute -top-4 -left-4 w-8 h-8 bg-emerald-300 rounded-full animate-bounce delay-0"></div>
+            <div className="absolute -top-2 -right-6 w-6 h-6 bg-teal-300 rounded-full animate-bounce delay-300"></div>
+            <div className="absolute -bottom-6 -left-2 w-10 h-10 bg-emerald-400 rounded-full animate-bounce delay-700"></div>
+            <div className="absolute -bottom-4 -right-4 w-4 h-4 bg-teal-400 rounded-full animate-bounce delay-1000"></div>
           </div>
         </div>
 

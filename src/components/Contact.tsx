@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -51,38 +52,38 @@ const Contact = () => {
     {
       title: 'Emergencias 24/7',
       subtitle: 'Línea directa de emergencias',
-      contact: '300 XXX XXXX',
-      icon: '🚨',
+      contact: 'Llamada directa',
+      icon: '/recursos/phone-icon.svg',
       color: 'from-red-500 to-red-600',
-      action: 'Llamar Ahora',
-      href: 'tel:300XXXXXXX'
+      action: 'SOS',
+      href: 'tel:+573214349583'
     },
     {
       title: 'WhatsApp',
       subtitle: 'Respuesta inmediata',
-      contact: '300 XXX XXXX',
-      icon: '💬',
+      contact: 'Chat inmediato',
+      icon: '/recursos/whatsapp-icon.svg',
       color: 'from-green-500 to-green-600',
-      action: 'Chatear',
-      href: 'https://wa.me/573XXXXXXXXX'
+      action: 'Chat',
+      href: 'https://wa.me/573214349583'
     },
     {
       title: 'Email',
       subtitle: 'Consultas y cotizaciones',
       contact: 'contacto@mimascotasegura.com',
-      icon: '📧',
+      icon: '/recursos/email-icon.svg',
       color: 'from-blue-500 to-blue-600',
-      action: 'Enviar Email',
+      action: 'Email',
       href: 'mailto:contacto@mimascotasegura.com'
     },
     {
       title: 'Oficina Principal',
-      subtitle: 'Bogotá, Colombia',
-      contact: 'Calle 123 #45-67',
-      icon: '📍',
+      subtitle: 'Barrancabermeja, Santander',
+      contact: 'Cl. 58 #2957-1',
+      icon: '/recursos/location-icon.svg',
       color: 'from-purple-500 to-purple-600',
-      action: 'Ver Ubicación',
-      href: 'https://maps.google.com'
+      action: 'Ubicar',
+      href: 'https://maps.google.com/maps?q=Cl.+58+%232957-1,+Barrancabermeja,+Santander'
     }
   ];
 
@@ -126,7 +127,13 @@ const Contact = () => {
               className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-emerald-100 text-center"
             >
               <div className={`w-16 h-16 bg-gradient-to-br ${method.color} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
-                <span className="text-3xl text-white">{method.icon}</span>
+                <Image 
+                  src={method.icon} 
+                  alt={method.title} 
+                  width={24} 
+                  height={24}
+                  className="filter invert"
+                />
               </div>
               <h3 className="text-lg font-bold text-slate-800 mb-2">{method.title}</h3>
               <p className="text-slate-600 text-sm mb-2">{method.subtitle}</p>
@@ -201,7 +208,7 @@ const Contact = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-emerald-200 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-colors duration-200"
-                  placeholder="300 XXX XXXX"
+                  placeholder="Tu número de teléfono"
                 />
               </div>
 
@@ -325,52 +332,7 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Mapa placeholder */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-emerald-100">
-              <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center space-x-2">
-                <span>📍</span>
-                <span>Nuestra Ubicación</span>
-              </h3>
-              <div className="bg-gradient-to-br from-emerald-400 to-teal-600 rounded-lg p-8 text-center text-white">
-                <div className="text-4xl mb-4">🗺️</div>
-                <h4 className="text-lg font-bold mb-2">Oficina Principal</h4>
-                <p className="text-emerald-100 mb-4">
-                  Calle 123 #45-67<br />
-                  Bogotá, Colombia
-                </p>
-                <button className="bg-white text-emerald-600 hover:bg-emerald-50 px-4 py-2 rounded-lg font-semibold transition-colors duration-200">
-                  Ver en Google Maps
-                </button>
-              </div>
-            </div>
 
-            {/* Redes sociales */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg border border-emerald-100">
-              <h3 className="text-xl font-bold text-slate-800 mb-4 flex items-center space-x-2">
-                <span>🌐</span>
-                <span>Síguenos</span>
-              </h3>
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white hover:bg-blue-700 transition-colors duration-200"
-                >
-                  📘
-                </a>
-                <a
-                  href="#"
-                  className="w-12 h-12 bg-pink-600 rounded-lg flex items-center justify-center text-white hover:bg-pink-700 transition-colors duration-200"
-                >
-                  📷
-                </a>
-                <a
-                  href="#"
-                  className="w-12 h-12 bg-blue-400 rounded-lg flex items-center justify-center text-white hover:bg-blue-500 transition-colors duration-200"
-                >
-                  🐦
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 

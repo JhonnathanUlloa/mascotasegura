@@ -2,7 +2,7 @@
 
 Una plataforma integral para el cuidado y protección de mascotas con servicios de emergencia 24/7, seguros y memorial digital.
 
-## 🚀 Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 - **Next.js 15.5.4** - Framework de React con App Router
 - **React 19.1.0** - Biblioteca de interfaz de usuario
@@ -10,7 +10,7 @@ Una plataforma integral para el cuidado y protección de mascotas con servicios 
 - **Tailwind CSS 4** - Framework de CSS utilitario
 - **Turbopack** - Bundler ultra-rápido para desarrollo
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 src/
@@ -51,29 +51,29 @@ src/
 
 ```
 
-## 🎨 Características
+##  Características
 
-### ✅ Arquitectura Multi-Página
+###  Arquitectura Multi-Página
 - **Rutas semánticas**: URLs claras como `/planes`, `/contacto`, `/memorial`
 - **SEO optimizado**: Metadata específica para cada página
 - **Navegación intuitiva**: Header con enlaces directos a cada sección
 
-### ✅ Componentes Modulares
+###  Componentes Modulares
 - Cada sección es un componente independiente
 - Fácil mantenimiento y escalabilidad
 - Reutilización de código optimizada
 
-### ✅ Diseño Responsive
+###  Diseño Responsive
 - Diseño mobile-first con Tailwind CSS
 - Navegación adaptable en dispositivos móviles
 - Imágenes optimizadas con Next.js Image
 
-### ✅ Recursos Integrados
+###  Recursos Integrados
 - Logo corporativo (`logoms.jpeg`)
 - Imagen cálida de mascotas (`ftocalida.png`)
 - Iconografía consistente con emojis
 
-## 🚀 Desarrollo
+##  Desarrollo
 
 ### Instalación
 ```bash
@@ -92,7 +92,7 @@ npm run build
 npm start
 ```
 
-## 🗺️ Rutas Disponibles
+##  Rutas Disponibles
 
 | Ruta | Descripción | Componente Principal |
 |------|-------------|---------------------|
@@ -105,25 +105,25 @@ npm start
 | `/sobre-nosotros` | Información corporativa | AboutUs |
 | `/contacto` | Formulario de contacto | Contact |
 
-## 🎯 Funcionalidades Principales
+##  Funcionalidades Principales
 
-### 🚨 Emergencias 24/7
+###  Emergencias 24/7
 - Botón de emergencia visible en toda la plataforma
 - Llamada directa desde cualquier página
 
-### 💬 WhatsApp Integration
+###  WhatsApp Integration
 - Contacto inmediato por WhatsApp
 - Disponible en header y footer
 
-### 📱 Memorial Digital
+###  Memorial Digital
 - Sección especial para honrar mascotas
 - Servicios de despedida personalizados
 
-### 💳 Planes Flexibles
+###  Planes Flexibles
 - Membresías adaptadas a diferentes necesidades
 - Información clara de coberturas
 
-## 🔧 Configuración
+##  Configuración
 
 ### Colores Personalizados
 ```css
@@ -143,15 +143,16 @@ npm start
 - `npm run start` - Servidor de producción
 - `npm run lint` - Linting con ESLint
 
-## 📞 Contacto
+##  Contacto
 
-Para emergencias: **300 XXX XXXX** (24/7)
-WhatsApp: **573 XXXXXXXXX**
-Email: **contacto@mimascotasegura.com**
+**Ubicación**: Cl. 58 #29-57-1, Barrancabermeja, Santander
+**Emergencias**: 24/7 - Llamada directa desde botones
+**WhatsApp**: Contacto inmediato desde la web
+**Email**: contacto@mimascotasegura.com
 
 ---
 
-## 🏗️ Próximas Mejoras
+##  Próximas Mejoras
 
 - [ ] Integración con CMS para contenido dinámico
 - [ ] Sistema de autenticación para clientes
@@ -160,4 +161,4 @@ Email: **contacto@mimascotasegura.com**
 - [ ] Chat en vivo con veterinarios
 - [ ] App móvil nativa
 
-Desarrollado con ❤️ para las mascotas y sus familias.
+Desarrollado con  para las mascotas y sus familias.

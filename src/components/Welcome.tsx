@@ -40,7 +40,7 @@ const Welcome = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto">
                 <span className="text-3xl">⏰</span>
               </div>
               <h3 className="text-xl font-bold text-slate-800">Disponibilidad 24/7</h3>
@@ -50,7 +50,7 @@ const Welcome = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto">
                 <span className="text-3xl">❤️</span>
               </div>
               <h3 className="text-xl font-bold text-slate-800">Con Amor</h3>

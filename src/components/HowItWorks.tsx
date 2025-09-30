@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const HowItWorks = () => {
   const steps = [
     {
@@ -92,12 +94,23 @@ const HowItWorks = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
                 <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-3">
-                  <span>🚀</span>
-                  <span>Comenzar Ahora</span>
+                  <Image 
+                    src="/recursos/contact-icon.svg" 
+                    alt="Comenzar" 
+                    width={20} 
+                    height={20}
+                    className="filter invert"
+                  />
+                  <span>Comenzar</span>
                 </button>
                 <button className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center space-x-3">
-                  <span>💬</span>
-                  <span>Preguntar a Experto</span>
+                  <Image 
+                    src="/recursos/whatsapp-icon.svg" 
+                    alt="Chat" 
+                    width={20} 
+                    height={20}
+                  />
+                  <span>Chat</span>
                 </button>
               </div>
             </div>

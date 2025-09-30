@@ -64,19 +64,31 @@ const Header = () => {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
             <Link
-              href="tel:300XXXXXXX"
+              href="tel:+573214349583"
               className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-200 flex items-center space-x-2"
             >
-              <span>🚨</span>
-              <span>Emergencias 24/7</span>
+              <Image 
+                src="/recursos/phone-icon.svg" 
+                alt="Llamar" 
+                width={16} 
+                height={16}
+                className="filter invert"
+              />
+              <span>SOS</span>
             </Link>
             <Link
-              href="https://wa.me/573XXXXXXXXX"
+              href="https://wa.me/573214349583"
               target="_blank"
               className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold transition-colors duration-200 flex items-center space-x-2"
             >
-              <span>💬</span>
-              <span>WhatsApp</span>
+              <Image 
+                src="/recursos/whatsapp-icon.svg" 
+                alt="WhatsApp" 
+                width={16} 
+                height={16}
+                className="filter invert"
+              />
+              <span>Chat</span>
             </Link>
           </div>
 
@@ -109,19 +121,31 @@ const Header = () => {
               ))}
               <div className="pt-4 border-t border-gray-200 space-y-3">
                 <Link
-                  href="tel:300XXXXXXX"
+                  href="tel:+573214349583"
                   className="bg-red-600 hover:bg-red-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2 w-full"
                 >
-                  <span>🚨</span>
-                  <span>Emergencias 24/7</span>
+                  <Image 
+                    src="/recursos/phone-icon.svg" 
+                    alt="Llamar" 
+                    width={16} 
+                    height={16}
+                    className="filter invert"
+                  />
+                  <span>SOS</span>
                 </Link>
                 <Link
-                  href="https://wa.me/573XXXXXXXXX"
+                  href="https://wa.me/573214349583"
                   target="_blank"
                   className="bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center space-x-2 w-full"
                 >
-                  <span>💬</span>
-                  <span>WhatsApp</span>
+                  <Image 
+                    src="/recursos/whatsapp-icon.svg" 
+                    alt="WhatsApp" 
+                    width={16} 
+                    height={16}
+                    className="filter invert"
+                  />
+                  <span>Chat</span>
                 </Link>
               </div>
             </div>

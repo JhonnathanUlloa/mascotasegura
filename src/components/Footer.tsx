@@ -29,10 +29,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'Facebook', icon: '📘', href: 'https://facebook.com/mimascotasegura', color: 'hover:bg-blue-600' },
-    { name: 'Instagram', icon: '📷', href: 'https://instagram.com/mimascotasegura', color: 'hover:bg-pink-600' },
-    { name: 'Twitter', icon: '🐦', href: 'https://twitter.com/mimascotasegura', color: 'hover:bg-blue-400' },
-    { name: 'YouTube', icon: '📺', href: 'https://youtube.com/mimascotasegura', color: 'hover:bg-red-600' }
+    { name: 'Facebook', icon: '/recursos/facebook-icon.svg', href: 'https://facebook.com/mimascotasegura', color: 'hover:bg-blue-600' },
+    { name: 'Instagram', icon: '/recursos/instagram-icon.svg', href: 'https://instagram.com/mimascotasegura', color: 'hover:bg-pink-600' },
+    { name: 'Twitter', icon: '/recursos/twitter-icon.svg', href: 'https://twitter.com/mimascotasegura', color: 'hover:bg-blue-400' },
+    { name: 'YouTube', icon: '/recursos/youtube-icon.svg', href: 'https://youtube.com/mimascotasegura', color: 'hover:bg-red-600' }
   ];
 
   return (
@@ -65,24 +65,24 @@ const Footer = () => {
             {/* Contact info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
-                <span className="text-emerald-400">🚨</span>
+                <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                 <div>
                   <p className="font-semibold">Emergencias 24/7</p>
-                  <p className="text-slate-300 text-sm">300 XXX XXXX</p>
+                  <p className="text-slate-300 text-sm">Llamada directa</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <span className="text-emerald-400">📧</span>
+                <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
                 <div>
                   <p className="font-semibold">Email</p>
                   <p className="text-slate-300 text-sm">contacto@mimascotasegura.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
-                <span className="text-emerald-400">📍</span>
+                <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
                 <div>
                   <p className="font-semibold">Ubicación</p>
-                  <p className="text-slate-300 text-sm">Bogotá, Colombia</p>
+                  <p className="text-slate-300 text-sm">Barrancabermeja, Santander</p>
                 </div>
               </div>
             </div>
@@ -158,7 +158,13 @@ const Footer = () => {
                     className={`w-10 h-10 bg-slate-700 rounded-lg flex items-center justify-center text-slate-300 ${social.color} transition-all duration-200 transform hover:scale-110`}
                     title={social.name}
                   >
-                    <span className="text-lg">{social.icon}</span>
+                    <Image 
+                      src={social.icon} 
+                      alt={social.name} 
+                      width={16} 
+                      height={16}
+                      className="text-slate-300"
+                    />
                   </a>
                 ))}
               </div>
@@ -167,17 +173,17 @@ const Footer = () => {
             {/* Emergency highlight */}
             <div className="bg-red-600 rounded-lg p-4 mt-6">
               <div className="flex items-center space-x-2 mb-2">
-                <span className="text-xl">🚨</span>
+                <div className="w-3 h-3 bg-white rounded-full animate-pulse"></div>
                 <span className="font-bold">¿Emergencia?</span>
               </div>
               <p className="text-red-100 text-sm mb-3">
                 Llama ahora para atención inmediata
               </p>
               <a
-                href="tel:300XXXXXXX"
+                href="tel:+573214349583"
                 className="block bg-white text-red-600 text-center py-2 px-4 rounded-md font-bold hover:bg-red-50 transition-colors duration-200"
               >
-                300 XXX XXXX
+                Llamar Ahora
               </a>
             </div>
           </div>
@@ -231,10 +237,8 @@ const Footer = () => {
             </div>
 
             {/* Made with love */}
-            <div className="text-slate-400 text-sm flex items-center space-x-1">
-              <span>Hecho con</span>
-              <span className="text-red-400 animate-pulse">❤️</span>
-              <span>para las mascotas</span>
+            <div className="text-slate-400 text-sm">
+              <span>Hecho con cariño para las mascotas</span>
             </div>
           </div>
         </div>
@@ -243,13 +247,19 @@ const Footer = () => {
       {/* WhatsApp floating button */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/573XXXXXXXXX"
+          href="https://wa.me/573214349583"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-pulse"
           title="WhatsApp"
         >
-          <span className="text-2xl text-white">💬</span>
+          <Image 
+            src="/recursos/whatsapp-icon.svg" 
+            alt="WhatsApp" 
+            width={24} 
+            height={24}
+            className="filter invert"
+          />
         </a>
       </div>
     </footer>

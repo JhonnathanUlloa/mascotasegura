@@ -13,7 +13,7 @@ const Testimonials = () => {
       rating: 5,
       text: 'La emergencia con mi perro fue de madrugada y Mi Mascota Segura coordinó todo con la clínica al instante. Su servicio 24/7 es real y eficiente. ¡Totalmente recomendados!',
       avatar: '👩‍💼',
-      petPhoto: '🐕',
+      petPhoto: '🐶',
       service: 'Emergencia 24/7'
     },
     {
@@ -43,7 +43,7 @@ const Testimonials = () => {
       rating: 5,
       text: 'La coordinación veterinaria es excelente. Consiguieron cita de emergencia en menos de 30 minutos. El servicio es tal como lo prometen.',
       avatar: '👨‍🦲',
-      petPhoto: '🐕‍🦺',
+      petPhoto: '🐶',
       service: 'Coordinación Veterinaria'
     },
     {
@@ -53,7 +53,7 @@ const Testimonials = () => {
       rating: 5,
       text: 'El apoyo emocional que recibimos fue fundamental. Los psicólogos especializados realmente entienden el vínculo que tenemos con nuestras mascotas.',
       avatar: '👩‍🎓',
-      petPhoto: '🐕‍🦺',
+      petPhoto: '🐶',
       service: 'Apoyo Emocional'
     }
   ];
@@ -86,14 +86,14 @@ const Testimonials = () => {
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Testimonios reales de familias que han confiado en nosotros para cuidar de sus mascotas
           </p>
-          <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
+                              <div className="w-24 h-1 bg-emerald-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Testimonial principal */}
         <div className="max-w-4xl mx-auto mb-12">
           <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-2xl border border-amber-100 relative overflow-hidden">
             {/* Decorative elements */}
-            <div className="absolute top-0 right-0 w-32 h-32 bg-amber-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100 rounded-full -translate-y-16 translate-x-16 opacity-50"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-orange-100 rounded-full translate-y-12 -translate-x-12 opacity-50"></div>
             
             <div className="relative z-10">
@@ -112,8 +112,8 @@ const Testimonials = () => {
                   <div className="flex items-center justify-center lg:justify-start space-x-1 mb-2">
                     {renderStars(testimonials[activeTestimonial].rating)}
                   </div>
-                  <div className="bg-amber-100 rounded-lg px-3 py-1 inline-block">
-                    <span className="text-amber-700 text-sm font-medium">
+                  <div className="bg-emerald-100 rounded-lg px-3 py-1 inline-block">
+                    <span className="text-emerald-700 text-sm font-medium">
                       {testimonials[activeTestimonial].service}
                     </span>
                   </div>
@@ -145,8 +145,8 @@ const Testimonials = () => {
               onClick={() => setActiveTestimonial(index)}
               className={`w-3 h-3 rounded-full transition-all duration-300 ${
                 index === activeTestimonial 
-                  ? 'bg-amber-500 w-8' 
-                  : 'bg-amber-200 hover:bg-amber-300'
+                  ? 'bg-emerald-500 w-8' 
+                  : 'bg-emerald-200 hover:bg-emerald-300'
               }`}
             />
           ))}
@@ -183,7 +183,7 @@ const Testimonials = () => {
                     <span className="text-lg">{testimonial.petPhoto}</span>
                     <span className="text-slate-600 text-sm font-medium">{testimonial.pet}</span>
                   </div>
-                  <span className="bg-amber-100 text-amber-700 text-xs px-2 py-1 rounded-full font-medium">
+                  <span className="bg-emerald-100 text-emerald-700 text-xs px-2 py-1 rounded-full font-medium">
                     {testimonial.service}
                   </span>
                 </div>
@@ -226,7 +226,7 @@ const Testimonials = () => {
             <p className="text-amber-100 mb-6">
               Únete a cientos de familias que ya confían en nosotros para cuidar de sus mascotas
             </p>
-            <button className="bg-white text-amber-600 hover:bg-amber-50 px-8 py-3 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto">
+            <button className="bg-white text-emerald-600 hover:bg-emerald-50 px-8 py-3 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto">
               <span>🚀</span>
               <span>Comenzar Ahora</span>
             </button>

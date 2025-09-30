@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface FAQItem {
   question: string;
@@ -30,7 +31,7 @@ const FAQ = () => {
     },
     {
       question: '¿Qué debo hacer en caso de una emergencia?',
-      answer: 'En caso de emergencia, llama inmediatamente a nuestra línea 24/7: 300 XXX XXXX. Nuestro equipo te brindará orientación telefónica inmediata, coordinará con la clínica más cercana o tu veterinario de confianza, y si es necesario, activará el protocolo de seguro para cubrir los gastos.',
+      answer: 'En caso de emergencia, usa nuestro botón de emergencias 24/7 disponible en toda la web. Nuestro equipo te brindará orientación telefónica inmediata, coordinará con la clínica más cercana o tu veterinario de confianza, y si es necesario, activará el protocolo de seguro para cubrir los gastos.',
       category: 'emergency'
     },
     {
@@ -185,15 +186,32 @@ const FAQ = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center space-x-2">
-                <span>💬</span>
-                <span>Chat en Vivo</span>
+                <Image 
+                  src="/recursos/contact-icon.svg" 
+                  alt="Chat" 
+                  width={16} 
+                  height={16}
+                  className="filter invert"
+                />
+                <span>Chat</span>
               </button>
               <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center space-x-2">
-                <span>📱</span>
-                <span>WhatsApp</span>
+                <Image 
+                  src="/recursos/whatsapp-icon.svg" 
+                  alt="WhatsApp" 
+                  width={16} 
+                  height={16}
+                  className="filter invert"
+                />
+                <span>Chat</span>
               </button>
               <button className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-8 py-3 rounded-xl font-semibold transition-all duration-200 flex items-center justify-center space-x-2">
-                <span>📧</span>
+                <Image 
+                  src="/recursos/email-icon.svg" 
+                  alt="Email" 
+                  width={16} 
+                  height={16}
+                />
                 <span>Email</span>
               </button>
             </div>

@@ -72,28 +72,28 @@ const Memorial = () => {
   ];
 
   return (
-    <section id="memorial" className="py-20 bg-gradient-to-br from-slate-50 to-purple-50">
+    <section id="memorial" className="py-20 bg-gradient-to-br from-slate-50 to-emerald-50">
       <div className="container mx-auto px-4">
         {/* Título de la sección */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-800">
-            Memorial <span className="text-purple-600">Digital</span>
+            Memorial <span className="text-emerald-600">Digital</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Un espacio sagrado para honrar la memoria de tu fiel compañero y recibir el apoyo que necesitas
           </p>
-          <div className="w-24 h-1 bg-purple-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-emerald-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Navegación por pestañas */}
         <div className="flex justify-center mb-12">
-          <div className="bg-white rounded-2xl p-2 shadow-lg border border-purple-100 flex flex-wrap">
+          <div className="bg-white rounded-2xl p-2 shadow-lg border border-emerald-100 flex flex-wrap">
             <button
               onClick={() => setActiveTab('info')}
               className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
                 activeTab === 'info'
-                  ? 'bg-purple-600 text-white shadow-lg'
-                  : 'text-slate-600 hover:text-purple-600'
+                  ? 'bg-emerald-600 text-white shadow-lg'
+                  : 'text-slate-600 hover:text-emerald-600'
               }`}
             >
               Memorial Digital
@@ -102,8 +102,8 @@ const Memorial = () => {
               onClick={() => setActiveTab('products')}
               className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
                 activeTab === 'products'
-                  ? 'bg-purple-600 text-white shadow-lg'
-                  : 'text-slate-600 hover:text-purple-600'
+                  ? 'bg-emerald-600 text-white shadow-lg'
+                  : 'text-slate-600 hover:text-emerald-600'
               }`}
             >
               Productos
@@ -112,8 +112,8 @@ const Memorial = () => {
               onClick={() => setActiveTab('support')}
               className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
                 activeTab === 'support'
-                  ? 'bg-purple-600 text-white shadow-lg'
-                  : 'text-slate-600 hover:text-purple-600'
+                  ? 'bg-emerald-600 text-white shadow-lg'
+                  : 'text-slate-600 hover:text-emerald-600'
               }`}
             >
               Apoyo Emocional
@@ -125,7 +125,7 @@ const Memorial = () => {
         {activeTab === 'info' && (
           <div className="space-y-12">
             {/* Información principal */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg border border-purple-100">
+            <div className="bg-white rounded-2xl p-8 shadow-lg border border-emerald-100">
               <div className="grid lg:grid-cols-2 gap-8 items-center">
                 <div className="space-y-6">
                   <h3 className="text-2xl font-bold text-slate-800">
@@ -138,8 +138,8 @@ const Memorial = () => {
                   </p>
                   <div className="space-y-4">
                     <div className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <span className="text-purple-600">📸</span>
+                      <div className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span className="text-emerald-600">📸</span>
                       </div>
                       <div>
                         <h4 className="font-semibold text-slate-800">Galería de Recuerdos</h4>
@@ -147,8 +147,8 @@ const Memorial = () => {
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <span className="text-purple-600">✍️</span>
+                      <div className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span className="text-emerald-600">✍️</span>
                       </div>
                       <div>
                         <h4 className="font-semibold text-slate-800">Mensaje de Despedida</h4>
@@ -156,8 +156,8 @@ const Memorial = () => {
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
-                      <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <span className="text-purple-600">👥</span>
+                      <div className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <span className="text-emerald-600">👥</span>
                       </div>
                       <div>
                         <h4 className="font-semibold text-slate-800">Comparte con Seres Queridos</h4>
@@ -167,10 +167,10 @@ const Memorial = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl p-8 text-white">
+                  <div className="bg-gradient-to-br from-emerald-400 to-pink-500 rounded-2xl p-8 text-white">
                     <div className="text-6xl mb-4">🌟</div>
                     <h4 className="text-xl font-bold mb-2">Memoria Eterna</h4>
-                    <p className="text-purple-100">Un lugar sagrado para siempre</p>
+                    <p className="text-emerald-100">Un lugar sagrado para siempre</p>
                   </div>
                 </div>
               </div>
@@ -178,14 +178,14 @@ const Memorial = () => {
 
             {/* CTA Memorial */}
             <div className="text-center">
-              <div className="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-8 shadow-lg max-w-2xl mx-auto text-white">
+              <div className="bg-gradient-to-r from-emerald-600 to-pink-600 rounded-2xl p-8 shadow-lg max-w-2xl mx-auto text-white">
                 <h3 className="text-2xl font-bold mb-4">
                   Crea un Memorial
                 </h3>
-                <p className="text-purple-100 mb-6">
+                <p className="text-emerald-100 mb-6">
                   Honra la memoria de tu compañero con un espacio digital eterno
                 </p>
-                <button className="bg-white text-purple-600 hover:bg-purple-50 px-8 py-3 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto">
+                <button className="bg-white text-emerald-600 hover:bg-emerald-50 px-8 py-3 rounded-xl font-semibold transition-colors duration-200 flex items-center justify-center space-x-2 mx-auto">
                   <span>🌟</span>
                   <span>Crear Memorial</span>
                 </button>
@@ -210,17 +210,17 @@ const Memorial = () => {
               {memorialProducts.map((product, index) => (
                 <div
                   key={product.name}
-                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-purple-100"
+                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-emerald-100"
                 >
                   <div className="text-center space-y-4">
-                    <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto">
+                    <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto">
                       <span className="text-3xl">{product.icon}</span>
                     </div>
                     <h4 className="text-xl font-bold text-slate-800">{product.name}</h4>
                     <p className="text-slate-600 text-sm leading-relaxed">{product.description}</p>
-                    <div className="pt-4 border-t border-purple-100">
-                      <p className="text-purple-600 font-bold text-lg">{product.price}</p>
-                      <button className="mt-3 w-full bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors duration-200">
+                    <div className="pt-4 border-t border-emerald-100">
+                      <p className="text-emerald-600 font-bold text-lg">{product.price}</p>
+                      <button className="mt-3 w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors duration-200">
                         Más Información
                       </button>
                     </div>
@@ -230,14 +230,14 @@ const Memorial = () => {
             </div>
 
             <div className="text-center mt-12">
-              <div className="bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto border border-purple-100">
+              <div className="bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto border border-emerald-100">
                 <h4 className="text-xl font-bold text-slate-800 mb-4">
                   ¿Necesitas algo personalizado?
                 </h4>
                 <p className="text-slate-600 mb-6">
                   Podemos crear productos únicos y personalizados para honrar a tu mascota
                 </p>
-                <button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors duration-200">
+                <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors duration-200">
                   Solicitar Personalización
                 </button>
               </div>
@@ -261,21 +261,21 @@ const Memorial = () => {
               {supportResources.map((resource, index) => (
                 <div
                   key={resource.title}
-                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-purple-100"
+                  className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-emerald-100"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="w-14 h-14 bg-purple-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">{resource.icon}</span>
                     </div>
                     <div className="flex-1">
                       <div className="flex items-center space-x-2 mb-2">
                         <h4 className="text-lg font-bold text-slate-800">{resource.title}</h4>
-                        <span className="bg-purple-100 text-purple-600 text-xs px-2 py-1 rounded-full font-medium">
+                        <span className="bg-emerald-100 text-emerald-600 text-xs px-2 py-1 rounded-full font-medium">
                           {resource.type}
                         </span>
                       </div>
                       <p className="text-slate-600 leading-relaxed mb-4">{resource.description}</p>
-                      <button className="text-purple-600 hover:text-purple-700 font-semibold flex items-center space-x-2 transition-colors duration-200">
+                      <button className="text-emerald-600 hover:text-emerald-700 font-semibold flex items-center space-x-2 transition-colors duration-200">
                         <span>Acceder Ahora</span>
                         <span>→</span>
                       </button>
@@ -286,7 +286,7 @@ const Memorial = () => {
             </div>
 
             <div className="text-center mt-12">
-              <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 max-w-2xl mx-auto border border-purple-100">
+              <div className="bg-gradient-to-r from-emerald-50 to-pink-50 rounded-2xl p-8 max-w-2xl mx-auto border border-emerald-100">
                 <div className="text-4xl mb-4">💜</div>
                 <h4 className="text-xl font-bold text-slate-800 mb-4">
                   No estás solo en este proceso
@@ -295,10 +295,10 @@ const Memorial = () => {
                   Nuestro equipo de apoyo está disponible 24/7 para brindarte el acompañamiento que necesitas
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-200">
+                  <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-xl font-semibold transition-colors duration-200">
                     Hablar con Especialista
                   </button>
-                  <button className="border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200">
+                  <button className="border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-6 py-3 rounded-xl font-semibold transition-all duration-200">
                     Línea de Apoyo 24/7
                   </button>
                 </div>
