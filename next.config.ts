@@ -8,10 +8,6 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: false,
   },
-  images: {
-    remotePatterns: [],
-    formats: ['image/avif', 'image/webp'],
-  },
   poweredByHeader: false,
 };
 

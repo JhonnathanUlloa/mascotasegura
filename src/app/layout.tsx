@@ -15,23 +15,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Mi Mascota Segura - Tu tranquilidad, su bienestar",
-  description: "Cuidamos de tu mascota en cada etapa de su vida. Membresía integral con asistencia 24/7 y seguros para mascotas con las mejores aseguradoras.",
-  keywords: ["mascotas", "seguros", "veterinaria", "emergencias", "24/7", "pets", "cuidado animal"],
-  authors: [{ name: "Mi Mascota Segura" }],
-  openGraph: {
-    title: "Mi Mascota Segura - Tu tranquilidad, su bienestar",
-    description: "Cuidamos de tu mascota en cada etapa de su vida",
-    type: "website",
-    locale: "es_CO",
-  },
-};
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-  maximumScale: 5,
-  themeColor: "#10b981",
+  title: "Mi Mascota Segura",
+  description: "Cuidamos de tu mascota en cada etapa de su vida",
 };
 
 export default function RootLayout({
@@ -40,9 +25,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="es">
       <body
-        className={`${montserrat.variable} ${openSans.variable} font-sans antialiased bg-cream text-slate-800`}
+        className={`${montserrat.variable} ${openSans.variable} antialiased`}
       >
         {children}
       </body>
