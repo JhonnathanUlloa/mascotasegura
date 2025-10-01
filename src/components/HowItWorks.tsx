@@ -47,26 +47,26 @@ const HowItWorks = () => {
         </div>
 
         {/* Timeline de pasos */}
-        <div className="relative">
+        <div className="relative max-w-6xl mx-auto">
           {/* Línea conectora - Desktop */}
-          <div className="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-blue-200 via-emerald-200 via-amber-200 to-purple-200 transform -translate-y-1/2 rounded-full"></div>
+          <div className="hidden lg:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-emerald-200 via-amber-200 to-purple-200 rounded-full mx-16"></div>
           
           {/* Línea conectora - Mobile */}
-          <div className="lg:hidden absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-200 via-emerald-200 via-amber-200 to-purple-200 rounded-full"></div>
+          <div className="lg:hidden absolute left-8 top-0 h-full w-1 bg-gradient-to-b from-blue-200 via-emerald-200 via-amber-200 to-purple-200 rounded-full"></div>
 
-          <div className="grid lg:grid-cols-4 gap-8 lg:gap-4 relative">
+          <div className="grid lg:grid-cols-4 gap-12 lg:gap-6 relative">
             {steps.map((step, index) => (
-              <div key={step.number} className="relative">
+              <div key={step.number} className="relative flex lg:flex-col items-start lg:items-center">
                 {/* Número del paso - Círculo */}
-                <div className="lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 mb-6 lg:mb-0">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${step.color} rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg lg:mx-auto ml-0 relative z-10`}>
+                <div className="flex-shrink-0 lg:mb-8">
+                  <div className={`w-16 h-16 bg-gradient-to-br ${step.color} rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg relative z-10`}>
                     {step.number}
                   </div>
                 </div>
 
                 {/* Contenido del paso */}
-                <div className="lg:mt-20 ml-20 lg:ml-0 space-y-4">
-                  <div className="text-center lg:text-center">
+                <div className="ml-6 lg:ml-0 flex-1">
+                  <div className="text-left lg:text-center">
                     <div className="text-4xl mb-4">{step.icon}</div>
                     <h3 className="text-xl font-bold text-slate-800 mb-3">
                       {step.title}

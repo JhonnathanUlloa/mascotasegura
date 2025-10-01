@@ -24,6 +24,7 @@ const Header = () => {
     { href: '/memorial', label: 'Memorial' },
     { href: '/sobre-nosotros', label: 'Sobre Nosotros' },
     { href: '/contacto', label: 'Contacto' },
+    { href: '/perfil', label: 'Mi Perfil' },
   ];
 
   return (

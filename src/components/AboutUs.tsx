@@ -186,26 +186,26 @@ const AboutUs = () => {
           <h3 className="text-2xl lg:text-3xl font-bold text-slate-800 text-center mb-12">
             Nuestros Hitos
           </h3>
-          <div className="relative">
+          <div className="relative max-w-6xl mx-auto">
             {/* Línea de tiempo - Desktop */}
-            <div className="hidden lg:block absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 transform -translate-y-1/2 rounded-full"></div>
+            <div className="hidden lg:block absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 rounded-full mx-12"></div>
             
             {/* Línea de tiempo - Mobile */}
-            <div className="lg:hidden absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-200 via-indigo-200 to-purple-200 rounded-full"></div>
+            <div className="lg:hidden absolute left-8 top-0 h-full w-1 bg-gradient-to-b from-blue-200 via-indigo-200 to-purple-200 rounded-full"></div>
 
-            <div className="grid lg:grid-cols-5 gap-8 lg:gap-4 relative">
+            <div className="grid lg:grid-cols-5 gap-10 lg:gap-4 relative">
               {milestones.map((milestone, index) => (
-                <div key={milestone.year} className="relative">
+                <div key={milestone.year} className="relative flex lg:flex-col items-start lg:items-center">
                   {/* Círculo del año */}
-                  <div className="lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 mb-6 lg:mb-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg lg:mx-auto ml-0 relative z-10">
+                  <div className="flex-shrink-0 lg:mb-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg relative z-10">
                       <span className="text-xs">{milestone.year}</span>
                     </div>
                   </div>
 
                   {/* Contenido */}
-                  <div className="lg:mt-20 ml-20 lg:ml-0 space-y-4">
-                    <div className="text-center lg:text-center">
+                  <div className="ml-6 lg:ml-0 flex-1">
+                    <div className="text-left lg:text-center">
                       <div className="text-3xl mb-2">{milestone.icon}</div>
                       <p className="text-slate-700 font-medium text-sm leading-relaxed">
                         {milestone.event}
