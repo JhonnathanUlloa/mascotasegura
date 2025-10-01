@@ -8,7 +8,7 @@ const Hero = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   return (
-    <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="inicio" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background con gradiente */}
       <div className="absolute inset-0 bg-gradient-to-br from-amber-50 via-emerald-50 to-teal-100"></div>
       

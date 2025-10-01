@@ -28,9 +28,7 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white shadow-md`}>
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -108,8 +106,8 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden mt-4 py-4 border-t border-gray-200">
-            <div className="flex flex-col space-y-4">
+          <div className="lg:hidden mt-4 py-4 border-t border-gray-200 bg-white rounded-lg shadow-lg">
+            <div className="flex flex-col space-y-4 px-4">
               {navItems.map((item) => (
                 <Link
                   key={item.href}

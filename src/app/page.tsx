@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-cream">
       <Header />
-      <main>
+      <main className="pt-20">
         <Hero />
         <Welcome />
       </main>
