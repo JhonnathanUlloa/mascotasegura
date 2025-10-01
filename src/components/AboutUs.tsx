@@ -1,32 +1,34 @@
+import Image from 'next/image';
+
 const AboutUs = () => {
   const teamMembers = [
     {
-      name: 'Dr. María González',
-      role: 'Directora Médica Veterinaria',
-      description: 'Más de 15 años de experiencia en medicina veterinaria especializada en emergencias.',
-      avatar: '👩‍⚕️',
-      expertise: ['Medicina de Emergencia', 'Cirugía', 'Medicina Interna']
-    },
-    {
-      name: 'Carlos Rodríguez',
+      name: 'Oscar Bracho',
       role: 'Director de Servicios',
       description: 'Especialista en gestión de servicios de salud y coordinación de redes médicas.',
-      avatar: '👨‍💼',
+      avatar: '/recursos/team-director.svg',
       expertise: ['Gestión de Servicios', 'Coordinación', 'Atención al Cliente']
     },
     {
-      name: 'Ana Sofía Martínez',
-      role: 'Coordinadora de Seguros',
-      description: 'Experta en seguros para mascotas con 10+ años en el sector asegurador.',
-      avatar: '👩‍💼',
+      name: 'Jhonnathan Ulloa',
+      role: 'Director Técnico',
+      description: 'Experto en desarrollo de soluciones tecnológicas para el sector veterinario.',
+      avatar: '/recursos/team-tech.svg',
+      expertise: ['Desarrollo Web', 'Innovación', 'Tecnología']
+    },
+    {
+      name: 'Jose Rodriguez',
+      role: 'Coordinador de Seguros',
+      description: 'Experto en seguros para mascotas con amplia experiencia en el sector asegurador.',
+      avatar: '/recursos/team-insurance.svg',
       expertise: ['Seguros', 'Reclamos', 'Asesoría Legal']
     },
     {
-      name: 'Dr. Roberto Vásquez',
-      role: 'Especialista en Duelo',
-      description: 'Psicólogo especializado en duelo por mascotas y apoyo emocional familiar.',
-      avatar: '👨‍⚕️',
-      expertise: ['Psicología', 'Duelo', 'Terapia Familiar']
+      name: 'Jeyson Rueda',
+      role: 'Especialista en Atención al Cliente',
+      description: 'Profesional dedicado al soporte y bienestar de nuestros clientes y sus mascotas.',
+      avatar: '/recursos/team-support.svg',
+      expertise: ['Atención al Cliente', 'Soporte', 'Comunicación']
     }
   ];
 
@@ -68,7 +70,6 @@ const AboutUs = () => {
   return (
     <section id="sobre-nosotros" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto px-4">
-        {/* Título de la sección */}
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-800">
             Sobre <span className="text-blue-600">Nosotros</span>
@@ -79,7 +80,6 @@ const AboutUs = () => {
           <div className="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
         </div>
 
-        {/* Nuestra Historia */}
         <div className="mb-20">
           <div className="bg-white rounded-2xl p-8 lg:p-12 shadow-lg border border-blue-100">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -116,10 +116,8 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Misión, Visión y Valores */}
         <div className="mb-20">
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* Misión */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 text-center">
               <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🎯</span>
@@ -132,7 +130,6 @@ const AboutUs = () => {
               </p>
             </div>
 
-            {/* Visión */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 text-center">
               <div className="w-16 h-16 bg-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🔮</span>
@@ -145,7 +142,6 @@ const AboutUs = () => {
               </p>
             </div>
 
-            {/* Compromiso */}
             <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100 text-center">
               <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🤝</span>
@@ -160,7 +156,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Nuestros Valores */}
         <div className="mb-20">
           <h3 className="text-2xl lg:text-3xl font-bold text-slate-800 text-center mb-12">
             Nuestros Valores
@@ -171,7 +166,7 @@ const AboutUs = () => {
                 key={value.title}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-100 text-center"
               >
-                <div className={`w-16 h-16 bg-gradient-to-br ${value.color} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
+                <div className={'w-16 h-16 bg-gradient-to-br ' + value.color + ' rounded-2xl flex items-center justify-center mx-auto mb-4'}>
                   <span className="text-3xl">{value.icon}</span>
                 </div>
                 <h4 className="text-lg font-bold text-slate-800 mb-3">{value.title}</h4>
@@ -181,29 +176,24 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Timeline de hitos */}
         <div className="mb-20">
           <h3 className="text-2xl lg:text-3xl font-bold text-slate-800 text-center mb-12">
             Nuestros Hitos
           </h3>
           <div className="relative max-w-6xl mx-auto">
-            {/* Línea de tiempo - Desktop */}
             <div className="hidden lg:block absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 rounded-full mx-12"></div>
             
-            {/* Línea de tiempo - Mobile */}
             <div className="lg:hidden absolute left-8 top-0 h-full w-1 bg-gradient-to-b from-blue-200 via-indigo-200 to-purple-200 rounded-full"></div>
 
             <div className="grid lg:grid-cols-5 gap-10 lg:gap-4 relative">
               {milestones.map((milestone, index) => (
                 <div key={milestone.year} className="relative flex lg:flex-col items-start lg:items-center">
-                  {/* Círculo del año */}
                   <div className="flex-shrink-0 lg:mb-6">
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg relative z-10">
                       <span className="text-xs">{milestone.year}</span>
                     </div>
                   </div>
 
-                  {/* Contenido */}
                   <div className="ml-6 lg:ml-0 flex-1">
                     <div className="text-left lg:text-center">
                       <div className="text-3xl mb-2">{milestone.icon}</div>
@@ -218,7 +208,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Nuestro Equipo */}
         <div>
           <h3 className="text-2xl lg:text-3xl font-bold text-slate-800 text-center mb-12">
             Nuestro Equipo
@@ -229,8 +218,14 @@ const AboutUs = () => {
                 key={member.name}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-100 text-center"
               >
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-600 rounded-2xl flex items-center justify-center text-4xl mx-auto mb-4">
-                  {member.avatar}
+                <div className="w-20 h-20 rounded-full mx-auto mb-4 overflow-hidden bg-gradient-to-br from-blue-400 to-indigo-600 p-2">
+                  <Image 
+                    src={member.avatar} 
+                    alt={member.name}
+                    width={80}
+                    height={80}
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <h4 className="text-lg font-bold text-slate-800 mb-1">{member.name}</h4>
                 <p className="text-blue-600 font-medium text-sm mb-3">{member.role}</p>
@@ -250,7 +245,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Call to action */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl p-8 shadow-lg max-w-2xl mx-auto text-white">
             <h3 className="text-2xl font-bold mb-4">

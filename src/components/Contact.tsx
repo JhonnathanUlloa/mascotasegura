@@ -55,7 +55,7 @@ const Contact = () => {
       contact: 'Llamada directa',
       icon: '/recursos/phone-icon.svg',
       color: 'from-red-500 to-red-600',
-      action: 'SOS',
+      action: 'Emergencia',
       href: 'tel:+573214349583'
     },
     {

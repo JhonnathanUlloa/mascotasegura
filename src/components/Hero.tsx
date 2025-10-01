@@ -55,7 +55,7 @@ const Hero = () => {
                   height={20}
                   className="filter invert"
                 />
-                <span>SOS</span>
+                <span>Emergencia</span>
                 <div className="w-2 h-2 bg-red-200 rounded-full animate-ping"></div>
               </Link>
               

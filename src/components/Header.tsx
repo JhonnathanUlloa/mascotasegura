@@ -75,7 +75,7 @@ const Header = () => {
                 height={16}
                 className="filter invert"
               />
-              <span>SOS</span>
+              <span>Emergencia</span>
             </Link>
             <Link
               href="https://wa.me/573214349583"
@@ -132,7 +132,7 @@ const Header = () => {
                     height={16}
                     className="filter invert"
                   />
-                  <span>SOS</span>
+                  <span>Emergencia</span>
                 </Link>
                 <Link
                   href="https://wa.me/573214349583"
